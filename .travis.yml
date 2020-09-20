@@ -1,0 +1,33 @@
+language: node_js
+dist: xenial
+branches:
+  except:
+  - /^untagged.*/
+node_js:
+    - stable
+install:
+    - true
+# we don't actually do tests here
+script:
+    - "cd $TRAVIS_BUILD_DIR"
+    - "sh ./appimage/do_stuff.sh"
+    - "true"
+    - "pwd"
+    - "ls -l"
+
+before_deploy:
+    - "pwd"
+    - "cd $TRAVIS_BUILD_DIR"
+    - "pwd"
+    - "find . -iname 'MoarPerf*AppImage'"
+    - "cp ./appimage/out/*.AppImage out/"
+
+deploy:
+  provider: releases
+  file_glob: true
+  file: 
+    - "out/**/*"
+    - "out/*"
+  edge: true
+  draft: false
+  skip_cleanup: true

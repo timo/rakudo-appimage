@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Rakudo
+Comment=Compiler and REPL for the Raku language
+Exec=rakudo
+Icon=camelia_butterfly
+Terminal=true
+Type=Application
+StartupNotify=false
+Categories=Development;

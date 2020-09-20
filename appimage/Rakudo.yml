@@ -1,0 +1,33 @@
+app: Rakudo
+
+ingredients:
+  dist: bionic
+  sources:
+    - deb http://ftp.fau.de/ubuntu/ bionic main universe
+  packages:
+    - libsqlite3-dev
+    - libssl-dev
+    - openssl
+    - libzstd-dev
+    - libzstd
+
+script:
+  - echo "start of recipe script"
+  - pwd
+  - ls -l
+  - echo "will copy rakudo over"
+  - cp -r /usr/rakudo/ usr/
+  - echo "desktop entry"
+  - mkdir -p usr/share/applications/
+  - cp    ../../Rakudo.desktop usr/share/applications/
+  - cp    ../../Rakudo.desktop .
+  - cp    ../../Rakudo.desktop /home/travis/build/timo/moarperf/appimage/Rakudo/Rakudo.AppDir/
+  - cp    ../../Rakudo.desktop /home/travis/build/timo/moarperf/appimage/Rakudo/Rakudo.AppDir/usr/
+  - cp    ../../camelia_butterfly.png /home/travis/build/timo/moarperf/appimage/Rakudo/Rakudo.AppDir/camelia_butterfly.png
+  - echo "bin directory and launcher binary"
+  - mkdir -p usr/bin
+  - cp    ../../rakudo-appimage-launcher /home/travis/build/timo/moarperf/appimage/Rakudo/Rakudo.AppDir/usr/bin/
+  - sudo mkdir -p /usr/share/applications/
+  - sudo cp    ../../Rakudo.desktop /usr/share/applications/
+  - echo "Desktop entry"
+  - cp    ../../Rakudo.desktop usr/
