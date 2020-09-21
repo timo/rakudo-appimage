@@ -35,4 +35,4 @@ wget -q https://github.com/AppImage/pkg2appimage/releases/download/continuous/pk
 chmod +x ./pkg2appimage.AppImage
 
 mkdir -p ../out/
-./pkg2appimage.AppImage ./MoarPerf.yml
+./pkg2appimage.AppImage ./Rakudo.yml
