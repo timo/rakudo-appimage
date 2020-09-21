@@ -22,7 +22,7 @@ cd rakudo
 pwd
 ls -l
 git checkout $VERSION
-sudo perl Configure.pl --prefix="/usr/rakudo/" --gen-moar
+sudo perl Configure.pl --prefix="/usr/rakudo/" --gen-moar --relocatable
 sudo make -j2 install
 
 cd ../
