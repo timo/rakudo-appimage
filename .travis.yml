@@ -24,6 +24,8 @@ deploy:
   api_key:
     secure: gsuyZMKsAUtEUIXJrh9zSdCK/fLCK409vLaLJVgGlYmf2JQm8dqtc89uH68Zjwh4nIoNKM7WCNqPn4C4vfU98IID1IgmqMpTyJzhMyia9AEeZN8VMP5oyFARZ/awqzU5cO4u38qWBnBzzUuxM42hYIgj19/9oj/AxOVHCZKJRYvgkFcb3GCUFrWfjIzWTQb9TkwmD1lj+7q9406mOm1/GUOeE2bm1X6xVpL8L1sWm+4ynhkbZtZ+qrZgutFiRinJxyFYivMwXpbjosGXoCGEfFhevh5gozG1ZP6P7S4ryj7ckBUohdH+tDzNFzj5fmxMeGxfSAxKoZa8V9xTwgf9Fb79K2sx2AwguPynJ+uLofU8JVJiVBO1fiUEZgRlh1byERbsF1PS3OguTYvpjJfyCc+z9IBlrwoU6cRFO0J68TgYq2A4tnqFTXXFtWlBTXK+jTqjsEIVk6D1epXA/WiiPWeSE563NZtX5RphKlriAHrlIpnxvi6bJyboJqlTGQiQdtgzgVhxxkSNeBwSr3ivwS/jPTimTJdnGsNaLdlQ3kWlmcpuGDdAKH/DAl8xWeNClVLWmiWu2am+FjGZe4AzdatUnyS1oSZxHuUn8f65+B99EfG+4Jbiq2raU+TGeOoZfX6HSoVLgtQzCFDAZKgsjRmJju2Npy8uoVkIouXKtZU=
   file: out/*.AppImage
+  file_glob: true
   on:
     repo: timo/rakudo-appimage
+    tags: true
   skip_cleanup: 'true'
