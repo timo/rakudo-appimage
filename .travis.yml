@@ -19,10 +19,8 @@ before_deploy:
 - pwd
 - find . -iname 'Rakudo*AppImage'
 - find .. -iname 'Rakudo*AppImage'
+- mkdir -p out
 - cp ./appimage/out/*.AppImage out/
-- cp ../appimage/out/*.AppImage out/
-- cp ../out/*.AppImage out/
-- cp ./out/*.AppImage out/
 deploy:
   provider: releases
   api_key:
