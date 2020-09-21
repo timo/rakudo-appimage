@@ -21,12 +21,12 @@ script:
   - mkdir -p usr/share/applications/
   - cp    ../../Rakudo.desktop usr/share/applications/
   - cp    ../../Rakudo.desktop .
-  - cp    ../../Rakudo.desktop /home/travis/build/timo/moarperf/appimage/Rakudo/Rakudo.AppDir/
-  - cp    ../../Rakudo.desktop /home/travis/build/timo/moarperf/appimage/Rakudo/Rakudo.AppDir/usr/
-  - cp    ../../camelia_butterfly.png /home/travis/build/timo/moarperf/appimage/Rakudo/Rakudo.AppDir/camelia_butterfly.png
+  - cp    ../../Rakudo.desktop /home/travis/build/timo/rakudo-appimage/appimage/Rakudo/Rakudo.AppDir/
+  - cp    ../../Rakudo.desktop /home/travis/build/timo/rakudo-appimage/appimage/Rakudo/Rakudo.AppDir/usr/
+  - cp    ../../camelia_butterfly.png /home/travis/build/timo/rakudo-appimage/appimage/Rakudo/Rakudo.AppDir/camelia_butterfly.png
   - echo "bin directory and launcher binary"
   - mkdir -p usr/bin
-  - cp    ../../rakudo-appimage-launcher /home/travis/build/timo/moarperf/appimage/Rakudo/Rakudo.AppDir/usr/bin/
+  - cp    ../../rakudo-appimage-launcher /home/travis/build/timo/rakudo-appimage/appimage/Rakudo/Rakudo.AppDir/usr/bin/
   - sudo mkdir -p /usr/share/applications/
   - sudo cp    ../../Rakudo.desktop /usr/share/applications/
   - echo "Desktop entry"
