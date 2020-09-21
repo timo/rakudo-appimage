@@ -1,10 +1,8 @@
 language: node_js
 dist: xenial
-branches:
-  except:
-  - "/^untagged.*/"
-node_js:
-- stable
+on:
+  - tags: true
+  - all_branches: true
 install:
 - true
 script:
