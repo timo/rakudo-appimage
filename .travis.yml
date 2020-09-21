@@ -5,8 +5,6 @@ branches:
   - "/^untagged.*/"
 node_js:
 - stable
-before_install:
-- sudo apt-get -y install libzstd-dev
 install:
 - true
 script:
