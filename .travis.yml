@@ -28,6 +28,4 @@ deploy:
   file: out/*.AppImage
   file_glob: true
   draft: true
-  on:
-    repo: timo/rakudo-appimage
-  skip_cleanup: 'true'
+  skip_cleanup: true
