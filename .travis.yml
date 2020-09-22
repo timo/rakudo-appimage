@@ -27,3 +27,6 @@ deploy:
   file_glob: true
   draft: true
   skip_cleanup: true
+  on:
+    - tags: true
+    - repo: "timo/rakudo-appimage"
