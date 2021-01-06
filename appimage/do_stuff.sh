@@ -9,7 +9,7 @@
 set -xe
 
 export ARCH="$(arch)"
-export VERSION="2020.09"
+export VERSION="2020.11"
 
 APP=rakudo
 LOWERAPP=$APP
