@@ -9,7 +9,7 @@
 set -xe
 
 export ARCH="$(arch)"
-export VERSION="2020.11"
+export VERSION="2021.09"
 
 APP=rakudo
 LOWERAPP=$APP
@@ -31,7 +31,7 @@ ls -l
 
 cd "$BUILD_PATH/appimage"
 
-wget -q https://github.com/AppImage/pkg2appimage/releases/download/continuous/pkg2appimage-1797-x86_64.AppImage -O ./pkg2appimage.AppImage
+wget -q https://github.com/AppImage/pkg2appimage/releases/download/continuous/pkg2appimage-1807-x86_64.AppImage -O ./pkg2appimage.AppImage
 chmod +x ./pkg2appimage.AppImage
 
 mkdir -p ../out/
